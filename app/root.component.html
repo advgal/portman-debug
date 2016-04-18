@@ -1,0 +1,12 @@
+<div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+    <ul  class="nowrap">
+    <li *ngFor="#child of list">
+        <span class="tree-text">
+            <a [routerLink]="['Details']"> {{child}}</a></span>
+    </li>
+</ul>
+
+</div>
