@@ -11,7 +11,8 @@ import {RouteConfig, ROUTER_DIRECTIVES} from "angular2/router";
     templateUrl: 'app/root.component.html'
 })
 @RouteConfig ([
-    {path: '/dn/', name: 'Details', component: DetailsComponent}
+    {path: '/dn/:dn', name: 'Details', component: DetailsComponent}
+    // {path: '/dn/', name: 'Details', component: DetailsComponent}
 ])
 export class RootComponent  {
     private list:Array<string>;

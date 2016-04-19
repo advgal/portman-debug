@@ -5,7 +5,7 @@
     <ul  class="nowrap">
     <li *ngFor="#child of list">
         <span class="tree-text">
-            <a [routerLink]="['Details']"> {{child}}</a></span>
+            <a [routerLink]="['Details',{dn:child}]"> {{child}}</a></span>
     </li>
 </ul>
 

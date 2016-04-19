@@ -38,7 +38,7 @@ System.register(['angular2/core', "./details.component", "angular2/router"], fun
                         templateUrl: 'app/root.component.html'
                     }),
                     router_1.RouteConfig([
-                        { path: '/dn/', name: 'Details', component: details_component_1.DetailsComponent }
+                        { path: '/dn/:dn', name: 'Details', component: details_component_1.DetailsComponent }
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], RootComponent);

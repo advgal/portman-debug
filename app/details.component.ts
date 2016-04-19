@@ -1,11 +1,18 @@
-/**
- * Created by gal on 29.01.16.
- */
-import {Component} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
+import {RouteParams} from "angular2/router";
 
 @Component ({
     selector: 'pm-details',
-    templateUrl: 'app/details.component.html'
+    directives: [],
+    templateUrl: 'app/details.component.html',
+    styleUrls: []
 })
-export class DetailsComponent  {
+export class DetailsComponent implements OnInit {
+    private dn;
+    constructor (private routeParams: RouteParams) {
+    }
+
+    ngOnInit() {
+        this.dn = this.routeParams.get('dn');
+    }
 }
