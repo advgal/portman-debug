@@ -5,4 +5,7 @@ import {bootstrap}    from 'angular2/platform/browser'
 import {RootComponent} from './root.component'
 import {ROUTER_PROVIDERS} from "angular2/router";
 
+import {enableProdMode} from "angular2/core";
+enableProdMode();
+
 bootstrap (RootComponent,[ROUTER_PROVIDERS]);
